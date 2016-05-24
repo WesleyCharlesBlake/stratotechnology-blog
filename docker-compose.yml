@@ -1,0 +1,15 @@
+version: "2"  
+services:  
+    stratoblog:
+        build: .
+        ports:
+            - "80:80"
+        image: wesleycharlesblake/ghostblog
+        restart: always
+        volumes:
+            - ./ghost_data/data:/ghost/content/data
+            - ./ghost_data/images:/ghost/content/images
+            - ./ghost_data/themes/ghost-material:/ghost/content/themes/ghost-material
+            - ./ghost_data/themes/clui:/ghost/content/themes/clui
+        environment:
+            BLOG_URL: http://192.168.0.127
