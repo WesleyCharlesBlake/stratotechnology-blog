@@ -9,6 +9,5 @@ services:
         volumes:
             - ./ghost_data/data:/ghost/content/data
             - ./ghost_data/images:/ghost/content/images
-            - ./ghost_data/themes/ghost-material:/ghost/content/themes/ghost-material
         environment:
             BLOG_URL: http://127.0.0.1
