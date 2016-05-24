@@ -1,4 +1,4 @@
-FROM download13/node
+FROM wesleycharlesblake/nodejs
 
 WORKDIR /ghost  
 COPY config.js /ghost/config.js  
