@@ -2,7 +2,7 @@ FROM wesleycharlesblake/nodejs
 
 WORKDIR /ghost  
 COPY config.js /ghost/config.js  
-RUN wget -O ghost.zip https://github.com/TryGhost/Ghost/releases/download/0.8.0/Ghost-0.8.0.zip \  
+RUN wget -O ghost.zip https://ghost.org/zip/ghost-latest.zip \  
     && unzip ghost.zip \
     && rm ghost.zip \
     && npm install --production \
